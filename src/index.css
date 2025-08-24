@@ -1,0 +1,201 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+
+  --spacing: 0.25em;
+
+  /* Breakpoint */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px; 
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  /* Font Families */
+  --font-inter: 'Inter', sans-serif;
+  --font-ubuntu-mono: 'Ubuntu Mono', monospace;
+
+  /* Text Sizes */
+  --text-9xl: 4.5rem;
+  --text-9xl--line-height: 120%;
+  --text-8xl: 4rem;
+  --text-8xl--line-height: 120%;
+  --text-7xl: 3.5rem;
+  --text-7xl--line-height: 120%
+  --text-6xl: 3rem;
+  --text-6xl--line-height: 120%;
+  --text-5xl: 2.5rem;
+  --text-5xl--line-height: 120%;
+  --text-4xl: 2rem;
+  --text-4x--line-height: 125%;
+  --text-3xl: 1.75rem;
+  --text-3xl--line-height: 125%;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 130%;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 140%;
+  --text-lg: 1.125rem
+  --text-lg--line-height: 145%;
+  --text-base: 1rem;
+  --text-base--line-height: 150%;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 150%;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 150%;
+
+  /* Text Weight */
+  --font-weight-thin: 100;  
+  --font-weight-extralight: 200;  
+  --font-weight-light: 300;  
+  --font-weight-normal: 400;  
+  --font-weight-medium: 500;  
+  --font-weight-semibold: 600;  
+  --font-weight-bold: 700;  
+  --font-weight-extrabold: 800;  
+  --font-weight-black: 900;
+
+  /* Text Letter Spacing */
+  --tracking-tighter: -1%;
+  --tracking-tight: -0.5%;
+  --tracking-normal: 0%;
+
+
+  /* Primary Colors */
+  --color-primary-900: #000F22;
+  --color-primary-800: #001E43;
+  --color-primary-700: #002D65;
+  --color-primary-600: #003C86;
+  --color-primary-500: #004BA8;
+  --color-primary-400: #336FB9; 
+  --color-primary-300: #6693CB;
+  --color-primary-200: #99B7DC;
+  --color-primary-100: #CCDBEE;
+  --color-primary-50: #E5EDF6;
+  --color-primary-25: #F2F6FB;
+
+  /* Secondary Colors */
+  --color-secondary-900: #002311;
+  --color-secondary-800: #004622;
+  --color-secondary-700: #006932;
+  --color-secondary-600: #008C43;
+  --color-secondary-500: #00AF54;
+  --color-secondary-400: #33BF76;
+  --color-secondary-300: #66CF98;
+  --color-secondary-200: #99DFBB;
+  --color-secondary-100: #CCEFDD;
+  --color-secondary-50: #E5F7EE;
+  --color-secondary-25: F2FBF6;
+  
+  /* Neutral Colors */
+  --color-neutral-900: #08080A;
+  --color-neutral-800: #0F1014;
+  --color-neutral-700: #16161C;
+  --color-neutral-600: #1D1E26;
+  --color-neutral-500: #262731;
+  --color-neutral-400: #505159;
+  --color-neutral-300: #7C7C82;
+  --color-neutral-200: #A8A9AD;
+  --color-neutral-100: #D4D4D6;
+  --color-neutral-50: #EBEBEB;
+  --color-neutral-25: #F5F5F5;
+
+  /* Semantic Colors - Error */
+  --color-error-900: #2A0909;
+  --color-error-800: #541313;
+  --color-error-700: #7F1C1C;
+  --color-error-600: #A92626;
+  --color-error-500: #D32F2F;
+  --color-error-400: #DC5959;
+  --color-error-300: #E58282;
+  --color-error-200: #EDACAC;
+  --color-error-100: #F6D5D5;
+  --color-error-50: #FBEAEA;
+  --color-error-25: #FDF4F4;
+
+  /* Semantic Colors - Warning */
+  --color-warning-900: #2F1600;
+  --color-warning-800: #5F2B01;
+  --color-warning-700: #8E4101;
+  --color-warning-600: #BE5602;
+  --color-warning-500: #ED6C02;
+  --color-warning-400: #F18935;
+  --color-warning-300: #F4A767;
+  --color-warning-200: #F8C49A;
+  --color-warning-100: #FBE2CC;
+  --color-warning-50: #FDF0E5;
+  --color-warning-25: #FEF8F2;
+
+  /* Semantic Colors - Success */
+  --color-success-900: #09190A;
+  --color-success-800: #123214;
+  --color-success-700: #1C4B1E;
+  --color-success-600: #256428;
+  --color-success-500: #2E7D32;
+  --color-success-400: #58975B;
+  --color-success-300: #82B184;
+  --color-success-200: #ABCBAD;
+  --color-success-100: #D5E5D6;
+  --color-success-50: #EAF2EA;
+  --color-success-25: #F4F8F5;
+
+  /* Semantic Colors - Info */
+  --color-info-900: #001B2A;
+  --color-info-800: #013654;
+  --color-info-700: #01527D;
+  --color-info-600: #026DA7;
+  --color-info-500: #0288D1; 
+  --color-info-400: #35A0DA;
+  --color-info-300: #67B8E3;
+  --color-info-200: #9ACFED;
+  --color-info-100: #CCE7F6;
+  --color-info-50: #E5F3FA;
+  --color-info-25: #F2F9FD;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #1D1E26;
+  }
+
+::-webkit-scrollbar-thumb {
+  background-color: #A8A9AD;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+
+
+@layer components {
+
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+}
+
+@layer utilities {
+
+  .pg-padX {
+    @apply px-6 sm:px-10 2xl:px-20;
+  }
+
+  .pg-padY {
+    @apply py-4 sm:py-6;
+  }
+
+  .sect-padL {
+    @apply lg:pl-10 2xl:pl-0
+  }
+
+}
