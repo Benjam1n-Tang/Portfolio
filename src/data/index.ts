@@ -96,16 +96,6 @@ export const socials = [
 
 export const projects = [
   {
-    title: "Phreddit",
-    description:
-      "Phreddit is a mock Reddit application built with React for the frontend, Node.js for the backend, and MongoDB for data storage. This was built for my software development (CSE 316) course. ",
-    date: "May 13, 2024",
-    image: "",
-    tags: ["React JS", "Node JS", "MongoDB"],
-    repo: "https://github.com/Benjam1n-Tang/Phreddit",
-    link: "",
-  },
-  {
     title: "Chess AI",
     description:
       "This chess app, built with TypeScript, features a custom-designed UI and allows players to compete against a friend or an AI-powered bot. It showcases skills in UI development, game logic, and AI integration. ",
@@ -175,5 +165,42 @@ export const projects = [
     tags: ["Typescript JS", "Tailwind CSS"],
     repo: "https://github.com/Benjam1n-Tang/PersonalPortfolio",
     link: "https://benjam1n-tang.github.io/PersonalPortfolio/",
+  },
+  {
+    title: "Phreddit",
+    description:
+      "Phreddit is a mock Reddit application built with React for the frontend, Node.js for the backend, and MongoDB for data storage. This was built for my software development (CSE 316) course. ",
+    date: "Nov 13, 2024",
+    image: Images.phreddit,
+    tags: ["React JS", "CSS", "Node JS", "MongoDB"],
+    repo: "https://github.com/Benjam1n-Tang/Phreddit",
+    link: "https://bit.ly/46272N0",
+  },
+  {
+    title: "Chess TypeScript",
+    description:
+      "Chess TypeScript is a web-based chess game built with React and TypeScript, featuring local 1v1 play and an AI opponent powered by the Minimax algorithm with move validation, game state detection, and a responsive UI.",
+    date: "Jan 8, 2025",
+    image: Images.chess,
+    tags: ["Typescript JS", "React JS", "CSS"],
+    repo: "https://github.com/Benjam1n-Tang/Typescript-Chess",
+    link: "",
+  },
+  {
+    title: "ResuMaker",
+    description:
+      "Resumaker is a web app that helps users quickly generate professional resumes and cover letters, with AI assistance to suggest improvements, tailor content, and streamline the application process.",
+    date: "Sep 9, 2025",
+    image: Images.resuMaker,
+    tags: [
+      "TypeScript JS",
+      "Next JS",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDB",
+      "OpenAI API",
+    ],
+    repo: "https://github.com/Benjam1n-Tang/ResuMakerv2",
+    link: "https://bit.ly/46bqqpH",
   },
 ];
